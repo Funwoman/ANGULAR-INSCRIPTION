@@ -1,0 +1,5 @@
+<div>
+  <h1>Page d'enregistrement</h1>
+  <app-user-form [userCreated]="onUserCreated($event)"></app-user-form>
+  <app-user-card *ngIf="user" [user]="user" (deleteUser)="deleteUser"></app-user-card>
+</div>
