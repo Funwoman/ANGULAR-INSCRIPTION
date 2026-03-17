@@ -1,9 +1,45 @@
+
+<!-- Première étape : créer une page d'accueil simple avec un lien vers la page d'inscription. -->
+
 <!-- <app-register-page></app-register-page> -->
 
-<nav>
+
+<!-- seconde étape : ajouter un système de routage pour naviguer entre la page d'accueil et la page d'inscription. --> 
+<!-- <nav>
   <a routerLink="/">Accueil</a> | 
   <a routerLink="/register">S'inscrire</a>
 </nav>
 
 <hr>
-<router-outlet></router-outlet>
+ <router-outlet></router-outlet> 
+
+<troisième étape : ajouter une page d'accueil avec un message de bienvenue et un bouton pour aller vers la page d'inscription. --> 
+
+
+
+
+
+
+
+
+
+
+
+<!-- <router-outlet></router-outlet>
+<nav>
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Accueil</a> | 
+  <a routerLink="/register" routerLinkActive="active">S'inscrire</a>
+</nav> -->
+
+
+<nav class="navbar">
+  <a routerLink="/" 
+     routerLinkActive="active" 
+     [routerLinkActiveOptions]="{exact: true}">Accueil</a>
+  <a routerLink="/register" 
+     routerLinkActive="active">S'inscrire</a>
+</nav>
+
+<main class="content-container">
+  <router-outlet></router-outlet>
+</main>

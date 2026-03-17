@@ -1,4 +1,6 @@
 // user-card.component.ts
+
+
 import { Component, input, output } from '@angular/core';
 
 @Component({
