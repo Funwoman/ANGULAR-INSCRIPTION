@@ -1,25 +1,25 @@
 <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
   <div>
     <label>Nom :</label>
-    <input formControlName="name" type="text">
+    <input formControlName="name" type="text" />
     @if (userForm.get('name')?.invalid && userForm.get('name')?.touched) {
-      <small style="color: red;">Le nom est requis (min. 3 caractères)</small>
+      <small style="color: red">Le nom est requis (min. 3 caractères)</small>
     }
   </div>
 
   <div>
     <label>Email :</label>
-    <input formControlName="email" type="email">
+    <input formControlName="email" type="email" />
     @if (userForm.get('email')?.invalid && userForm.get('email')?.touched) {
-      <small style="color: red;">Email invalide</small>
+      <small style="color: red">Email invalide</small>
     }
   </div>
 
   <div>
     <label>Âge :</label>
-    <input formControlName="age" type="number">
+    <input formControlName="age" type="number" />
     @if (userForm.get('age')?.invalid && userForm.get('age')?.touched) {
-      <small style="color: red;">Vous devez avoir au moins 18 ans</small>
+      <small style="color: red">Vous devez avoir au moins 18 ans</small>
     }
   </div>
 
